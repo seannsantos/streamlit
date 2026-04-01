@@ -31,5 +31,3 @@ fig=px.scatter_mapbox(df, lat='latitude', lon='longitude', size='newspaper', hov
                       color='sales', color_continuous_scale=px.colors.sequential.Viridis)
 fig.update_layout(mapbox_style='carto-positron')
 st.plotly_chart(fig)
-
-pip install streamlit pandas plotly-express streamlit-plotly-events
